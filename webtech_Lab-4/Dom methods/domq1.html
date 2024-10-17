@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+    <p id ="greeting">Hello, world</p>
+    <button onclick="changeText()">Click Me</button>
+    <p id ="hideme">you won't see me anymore!</p>
+    <button onclick="hideElement()">Hide text</button>
+    <p id="showMe" style="display: none;">I am now Visivble</p>
+    <button onclick="showElement()">Show Text</button>
+    <img id="myImage"src="E:\a2.jpeg" alt="First Image">
+
+    <script>
+        function changeText(){
+            document.getElementById("greeting").textContent="Hello, Universe";
+            document.getElementById("greeting").style.color="red";
+        }
+        function hideElement(){
+            document.getElementById("hideme").style.display="none";
+        }
+        function ShowElement(){
+            document.getElementById("showMe").style.display="block";
+        }
+        function showElement(){
+            document.getElementById("myImage").src = "E:\a1.jpeg";
+        }
+    </script>
+    </body>
+   
+</html>
