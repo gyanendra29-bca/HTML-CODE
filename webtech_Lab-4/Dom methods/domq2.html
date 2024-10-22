@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p class="hideMe">Item 1</p>
+        <p class="hideMe">Item 1</p>
+        <button onclick="hideAll()">Hide All</button>
+    
+    <script>
+        function hideAll(){
+            var items = document.getElementsByClassName("hideMe");
+            for(var i=0;i< items.length;i++){
+                items[i].style.display = "none";
+              
+            }
+        }
+    </script>
+
+    </body>
+</html>
